@@ -4,7 +4,7 @@ public class TugasBioskop27 {
         Scanner sc = new Scanner(System.in);
         int tiket = 0;
         int hargaTiket = 50000;
-        double diskon = 0, pendapatan, total;
+        double diskon = 0, pendapatan, totalDiskon, totalBayar;
 
         for (int i = 0; i <= 1;) {
             System.out.print("Jumlah tiket terjual: ");
@@ -23,11 +23,12 @@ public class TugasBioskop27 {
                 diskon = 0;
             }
             pendapatan = tiket*hargaTiket;
-            total = pendapatan*diskon;
+            totalDiskon = pendapatan*diskon;
+            totalBayar = pendapatan - totalDiskon;
             System.out.println("Jumlah tiket yang terjual : " + tiket);
             System.out.println("Total harga sebelum diskon: Rp." + pendapatan);
-            System.out.println("Diskon: " + diskon);
-            System.out.println("Total harga setelah diskon: Rp." + total);
+            System.out.println("Diskon: " + totalDiskon);
+            System.out.println("Total harga setelah diskon: Rp." + totalBayar);
      }
 
 
