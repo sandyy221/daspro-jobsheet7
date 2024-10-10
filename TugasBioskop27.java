@@ -6,8 +6,8 @@ public class TugasBioskop27 {
         int hargaTiket = 50000;
         double diskon = 0, pendapatan, totalDiskon, totalBayar;
 
-        for (int i = 0; i <= 1;) {
-            System.out.print("Jumlah tiket terjual: ");
+        for (int i = 1; i <= 1; i++) {
+            System.out.print("Jumlah tiket terjual selama " + i + " hari: ");
             tiket = sc.nextInt();
 
             if (tiket < 0) {
@@ -29,7 +29,8 @@ public class TugasBioskop27 {
             System.out.println("Total harga sebelum diskon: Rp." + pendapatan);
             System.out.println("Diskon: " + totalDiskon);
             System.out.println("Total harga setelah diskon: Rp." + totalBayar);
-     }
+        }
+        
 
 
     }
